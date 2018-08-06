@@ -9,7 +9,7 @@ Para dicha integración se utilizo la función fetch() que permite obtener recur
 # Instrucciones de uso
 
 Para poder correr el proyecto es necesario contar con los programas
-- Netbeans https://netbeans.org/ 
+- Netbeans https://netbeans.org/ "HTML5/JavaScript"
 
 - JDK http://www.oracle.com/technetwork/es/java/javase/downloads/index.html.
 
