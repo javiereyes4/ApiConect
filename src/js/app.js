@@ -23,18 +23,17 @@ var App = angular.module('App', ["ngRoute"])
             }
         };
     });
-
 App.config(function($routeProvider) {
     $routeProvider
     .when("/Home", {
-        templateUrl : "Home.html"
+        templateUrl : "views/Home.html"
     })
     .when("/CreateUser", {
-        templateUrl : "CreateUser.html",
+        templateUrl : "views/CreateUser.html",
         controller: "UserCtrl"
     })    
     .when("/ToDo", {
-        templateUrl : "ToDo.html",
+        templateUrl : "views/ToDo.html",
         controller: "ToDoCtrl"
     })
     .otherwise({
