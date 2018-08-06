@@ -8,6 +8,10 @@ Para dicha integración se utilizo la función fetch() que permite obtener recur
 
 # Instrucciones de uso
 
-Para poder correr el proyecto es necesario contar con el programa Netbeans https://netbeans.org/ y con el JDK http://www.oracle.com/technetwork/es/java/javase/downloads/index.html.
+Para poder correr el proyecto es necesario contar con los programas
+- Netbeans https://netbeans.org/ 
+-JDK http://www.oracle.com/technetwork/es/java/javase/downloads/index.html.
 
-Una vez instalado el programa y los complementos se debe descargar el proyecto y dejarlo en la ubicación de su preferencia, y posterior a eso importar el proyecto en File -> OpenProject, se selecciona el que se descargo y ya se puede ejecutar.
+Una vez instalado el programa y los complementos se debe descargar el proyecto y dejarlo en la ubicación de su preferencia, y posterior a eso importar el proyecto en: 
+File -> OpenProject
+una vez importado el proyecto ya se puede ejecutar.
