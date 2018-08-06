@@ -1,0 +1,62 @@
+<div class="col-md-9" style="background-color: #C6C6C6;height: 40px;border: 1px solid #A7A5A5;border-top-right-radius:10px; ">
+    <label style="color: white; font-size: 25px;margin-top: 4px;">{{Title}}</label>    
+</div>
+<div class="col-md-12" style="background-color: white;height: 75vh;overflow-y: scroll">
+    
+    <div id="Message" style="position: fixed; right: 40px;top: 20px;display: none"  class="alert alert-success"><label id="txtlbl"></label></div>
+    <div id="MessageError" style="position: fixed; right: 40px;top: 20px;display: none"  class="alert alert-danger"><label id="txtlblerror"></label></div>
+    
+    <div class="col-lg-12" style="margin-top: 30px;">
+        <fieldset>
+            <legend>Crear Usuario</legend>
+            
+            <div class="col-lg-12">
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Name" ng-model="Name" placeholder="Nombre" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="UserName" ng-model="UserName" placeholder="UserName" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Email" ng-model="Email" placeholder="Email" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Direccion" ng-model="Direccion" placeholder="Dirección" style="margin-top: 10px;" /></div>
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Suite" ng-model="Suite" placeholder="Suite" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Ciudad" ng-model="Ciudad" placeholder="Ciudad" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="PostalCode" onlynumbers ng-model="PostalCode"placeholder="Código Postal" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Latitud" ng-model="Latitud" placeholder="Latitud" style="margin-top: 10px;" /></div>
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Longitud" ng-model="Longitud" placeholder="Longitud" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Telefono" onlynumbers ng-model="Telefono" placeholder="Télefono" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="WebPage" ng-model="WebPage" placeholder="WebSite" style="margin-top: 10px;" /></div>
+                <div class="col-lg-3"><input type="text" class="col-md-12" maxlength="50" id="Empresa" ng-model="Empresa" placeholder="Empresa" style="margin-top: 10px;" /></div>
+            </div>
+            
+            <button ng-click="AddUser()" class="btn-success" style="height: 40px;width:90px;margin-top: 20px;">Guardar</button>
+            
+        </fieldset>
+    </div>
+    
+    <div class="col-lg-12" style="margin-top: 35px;">
+        <fieldset>
+        <legend>Lista de Usuarios</legend>   
+            
+           <input type="text" class="col-sm-2" placeholder="Filter" id="FilterInput" style="margin-top: 10px;" />
+    
+    
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">UserName</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Telefono</th>
+
+                </tr>
+              </thead>
+              <tbody id="tblbody">
+              </tbody>
+            </table>
+    </fieldset>
+    </div>
+</div>

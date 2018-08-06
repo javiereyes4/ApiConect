@@ -1,0 +1,33 @@
+<div class="col-md-9" style="background-color: #C6C6C6;height: 40px;border: 1px solid #A7A5A5;border-top-right-radius:10px; ">
+    <label style="color: white; font-size: 25px;margin-top: 4px;">{{Title}}</label>    
+</div>
+<div class="col-md-12" style="background-color: white;height: 75vh;overflow-y: scroll">
+    
+    <div id="Message" style="position: fixed; right: 40px;top: 20px;display: none"  class="alert alert-success"><label id="txtlbl"></label></div>
+    <div id="MessageError" style="position: fixed; right: 40px;top: 20px;display: none"  class="alert alert-danger"><label id="txtlblerror"></label></div>
+    
+    <div class="col-md-4">
+        
+        <div class="col-md-12">
+            <input type="text" class="col-sm-5" onlynumbers maxlength="3" placeholder="Id Usuario" id="IdUser" ng-model="IdUser" style="margin-top: 10px;" />
+            <button class="btn btn-default" style="margin-top: 12px;margin-left: 5px;" cl ng-click="ListTodoUser()">Buscar</button>
+        </div>
+        <div class="col-md-12" style="margin-top: 10px;display: none" id="ShowNewTask" >
+            <div class="col-md-12">
+            <label>Crear Tarea</label>
+            </div>
+            <div class="col-md-12"><input type="text" class="col-md-12" maxlength="50" id="Tittle" ng-model="Tittle" placeholder="Titulo Tarea" style="margin-top: 10px;" /></div>
+            <div class="col-md-12"><button class="btn btn-success" ng-click="AddTask()">Agregar</button></div>
+        </div>
+        
+    </div>
+    
+    <div class="col-md-8">
+        <label id="UserTodo"></label>
+        
+        <div id="DivTodo">
+            
+        </div>
+    </div>
+    
+</div>
